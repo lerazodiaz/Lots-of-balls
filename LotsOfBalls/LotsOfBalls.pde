@@ -38,14 +38,14 @@ void draw() {
   y[0] += velY[0];
 
   //bounce ball if it hits walls
-  if (x[0] + diam/2 >= width) {
+  if (x[0] + diam[0]/2 >= width) {
     velX[0] = -abs(velX[0]);    //if the ball hits the right wall, assign x velocity the negative version of itself
-  } else if (x[0] - diam/2 <= 0) {
+  } else if (x[0] - diam[0]/2 <= 0) {
     velX[0] = abs(velX[0]);     //if the ball hits the left wall, assign x velocity the positive version of itself
   }
-  if (y[0] + diam/2 >= height) {
+  if (y[0] + diam[0]/2 >= height) {
     velY[0] = -abs(velY[0]);
-  } else if (y[0] - diam/2 <= 0) {
+  } else if (y[0] - diam[0]/2 <= 0) {
     velY[0] = abs(velY[0]);
   }
    ellipse(x[1], y[1], diam[1], diam[1]);
@@ -55,14 +55,14 @@ void draw() {
   y[1] += velY[1];
 
   //bounce ball if it hits walls
-  if (x[1] + diam/2 >= width) {
+  if (x[1] + diam[1]/2 >= width) {
     velX[1] = -abs(velX[1]);    //if the ball hits the right wall, assign x velocity the negative version of itself
-  } else if (x[1] - diam/2 <= 0) {
+  } else if (x[1] - diam[1]/2 <= 0) {
     velX[1] = abs(velX[1]);     //if the ball hits the left wall, assign x velocity the positive version of itself
   }
-  if (y[1] + diam/2 >= height) {
+  if (y[1] + diam[1]/2 >= height) {
     velY[1] = -abs(velY[1]);
-  } else if (y[1] - diam/2 <= 0) {
+  } else if (y[1] - diam[1]/2 <= 0) {
     velY[1] = abs(velY[1]);
   }
 }
