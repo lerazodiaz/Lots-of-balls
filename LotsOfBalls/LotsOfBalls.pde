@@ -28,9 +28,8 @@ void setup() {
 void draw() {
   //draw background to cover previous frame
   background(0);
-  int i = 0;
+  for (int i = 50; i < count; i++) { 
   //draw ball
-  while (i < count) {
     ellipse(x[i], y[i], diam[i], diam[i]);
 
     //add velocity to position
@@ -48,6 +47,5 @@ void draw() {
     } else if (y[i] - diam[i]/2 <= 0) {
       velY[i] = abs(velY[i]);
     }
-    i++;
   }
 }
