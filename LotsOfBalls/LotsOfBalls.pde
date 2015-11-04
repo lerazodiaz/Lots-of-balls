@@ -12,16 +12,14 @@ void setup() {
 
   //set size of canvas
   size(800, 600);
-  int i = 0;
+ 
   //initialize variables
-  while (i < count) {
+  for (int i = 50; i < count; i++) {
     x[i] = width/2;
     y[i] = height/2;
     diam[i] = 80;
     velX[i] = random(-5, 5);
     velY[i] = random(-5, 5);
-
-    i++;
   }
 }
 
