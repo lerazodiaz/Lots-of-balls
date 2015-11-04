@@ -9,6 +9,7 @@ float[] diam = new float[count];
 
 
 void setup() {
+
   //set size of canvas
   size(800, 600);
   int i = 0;
@@ -19,7 +20,7 @@ void setup() {
     diam[i] = 80;
     velX[i] = random(-5, 5);
     velY[i] = random(-5, 5);
-    
+
     i++;
   }
 }
@@ -47,5 +48,6 @@ void draw() {
     } else if (y[i] - diam[i]/2 <= 0) {
       velY[i] = abs(velY[i]);
     }
+    i++;
   }
 }
